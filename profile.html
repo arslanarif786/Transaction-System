@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"> </script> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"
+        id="bootstrap-css"> -->
+    <!-- <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script> -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="assets/css/profile.css">
+</head>
+
+<body onload="showUserData()">
+
+    <!-- display Current User Data -->
+    <div>
+        <div class='row'>
+            <div class="col-1">
+                <label>Fname:</label>
+            </div>
+            <div class="col-1">
+                <div id="d-fname"> </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class="col-1">
+                <label>Lname:</label>
+            </div>
+            <div class="col-1">
+                <div id="d-lname"> </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class="col-1">
+                <label>Username:</label>
+            </div>
+            <div class="col-1">
+                <div id="d-username"> </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class="col-1">
+                <label>Email:</label>
+            </div>
+            <div class="col-1">
+                <div id="d-email"> </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col-1">
+                <label>Password:</label>
+            </div>
+            <div class="col-1">
+                <div id="d-password"> </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Change Personal Profile
+    </button>
+
+    <!-- Modal for Change Current User Profile data-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mt-5 pt-5">
+
+                        <div class="profile-form">
+
+                            <form>
+                                <div>
+                                    <label>Username:</label>
+                                    <input type="text" name="username" placeholder="Enter New Username" id="username"
+                                        class="input-xlarge">
+                                </div>
+                                <div>
+                                    <label>First Name:</label>
+                                    <input type="text" name="firstname" placeholder="Enter New First Name" id="fname"
+                                        class="input-xlarge">
+                                </div>
+                                <div>
+                                    <label>Last Name:</label>
+                                    <input type="text" name="lastname" placeholder="Enter New Last Name" id="lname"
+                                        class="input-xlarge">
+                                </div>
+                                <div>
+                                    <label>Email:</label>
+                                    <input type="text" name="email" placeholder="Enter New Email" id="email"
+                                        class="input-xlarge">
+                                </div>
+                                <div>
+                                    <label>Old Password:</label>
+                                    <input type="text" name="password" placeholder="Enterpassword"
+                                        id="password" class="input-xlarge">
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="replace()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Modal open after click above button -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="assets/script/profile.js"> </script>
+</body>
+
+</html>
