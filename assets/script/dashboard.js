@@ -17,6 +17,10 @@ fetch("data.json").then(function(response){
         document.getElementById("data").innerHTML = dumy;
 }
 })
+function showProfile(){
+    document.location.href= "profile.html";
+}
+
 // .catch(function(err){
 //     console.log(err);
 // });

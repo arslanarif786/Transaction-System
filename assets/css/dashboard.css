@@ -5,3 +5,19 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
+.heading {
+    text-align: center;
+}
+.container {
+    background-color: #7f8fa6;
+}
+
+.c-profile {
+    margin: 0px 10px 0px 0px;
+}
+
+#profille {
+    background-color: black;
+    color: white;
+}

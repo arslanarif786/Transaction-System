@@ -11,6 +11,8 @@ function checkvalue() {
     if (currentUser) {
         alert("login sucessfully");
         localStorage.setItem("CurrentUser", JSON.stringify(currentUser));
+        location.href = "dashboard.html";
+
     } else {
         alert("account not registered")
     }

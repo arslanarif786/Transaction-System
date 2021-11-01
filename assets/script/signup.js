@@ -30,6 +30,8 @@ function storevalue() {
         data = JSON.stringify(data);
         localStorage.setItem("data", data);
         alert("your Account has been created");
-        window.open("login.htm", "_self");
+        //window.location.href("login.htm");
+        //window.open("login.htm", "_self");
+        location.href = "login.htm";
     }
 }

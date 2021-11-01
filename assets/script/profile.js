@@ -11,9 +11,9 @@ function showUserData() {
 
 }
 
+
 //Update function orr function updateData()
 $('#exampleModalCenter').on('shown.bs.modal', function (e) {
-
     document.getElementById("fname").value = currentUser.fname;
     document.getElementById("lname").value = currentUser.lname;
     document.getElementById("username").value = currentUser.username;
@@ -28,18 +28,22 @@ function replace() {
     e = document.getElementById("email").value;
     p = document.getElementById("password").value;
 
-    index =  data.findIndex(x => x.email == e )
-    data[index] = {email: e,
-         fname: f,
-          lname: l,
-          username: u,
-           password:p}
-    localStorage.setItem("data", JSON.stringify(data));
-    localStorage.setItem("CurrentUser", JSON.stringify({email: e,
+    index = data.findIndex(x => x.email == e)
+    data[index] = {
+        email: e,
         fname: f,
-         lname: l,
-         username: u,
-          password:p}));
-    
+        lname: l,
+        username: u,
+        password: p
+    }
+    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("CurrentUser", JSON.stringify({
+        email: e,
+        fname: f,
+        lname: l,
+        username: u,
+        password: p
+    }));
+
 
 }

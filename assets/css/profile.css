@@ -1,32 +1,31 @@
 body {
-    background-color: #e0dee1;
+    background-color: #f5f6fa;
     font-family: 'Roboto', sans-serif;
+
 }
 
 
-.container {
-    margin: auto;
-    padding: auto;
-    position: relative;
+.parent-container{
+    margin: 30px 30px 10px 30px;
+}
+
+.display-user {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid grey;
+    border-radius: 7px;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: #7f8fa6;
 }
-
 
 .profile-form {
-    width: 420px;
-    margin: 0px auto;
-    height: auto;
-}
-
-.profile-form form {
+    background-color: #7f8fa6;
     color: black;
+    margin: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid grey;
     border-radius: 5px;
-    margin-bottom: 5px;
-    background: white;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    padding: 35px;
-
+    text-align: center; 
 }
-
 
