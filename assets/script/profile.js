@@ -9,7 +9,6 @@ function showUserData() {
     document.getElementById("d-email").innerHTML = currentUser.email;
     document.getElementById("d-password").innerHTML = currentUser.password;
 
-
 }
 
 //Update function orr function updateData()
@@ -21,7 +20,6 @@ $('#exampleModalCenter').on('shown.bs.modal', function (e) {
     document.getElementById("email").value = currentUser.email;
     document.getElementById("password").value = currentUser.password;
 })
-
 
 function replace() {
     f = document.getElementById("fname").value;

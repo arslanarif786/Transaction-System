@@ -7,7 +7,7 @@ function storevalue() {
     y = document.getElementById("email").value;
     z = document.getElementById("password").value;
     i = document.getElementById("policy").value;
-    console.log("policy",i);
+    console.log("policy", i);
 
     p = {
         fname: w,
@@ -30,6 +30,6 @@ function storevalue() {
         data = JSON.stringify(data);
         localStorage.setItem("data", data);
         alert("your Account has been created");
-        window.open("login.htm","_self");
+        window.open("login.htm", "_self");
     }
 }
